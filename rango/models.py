@@ -1,4 +1,6 @@
 from django.db import models
+from django.shortcuts import render
+from django.http import HttpResponse
 
 class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
